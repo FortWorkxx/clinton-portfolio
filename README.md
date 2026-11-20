@@ -1,3 +1,29 @@
+# Clinton Global Investment (CGI)
+
+A responsive corporate portfolio for CGI, a multi-service company based in Port Harcourt, Nigeria. The experience introduces the parent brand and its four divisions: Marine & Outboard, Real Estate, Fashion & Style, and AI Creative.
+
+## Run locally
+
+This is a static HTML, CSS and JavaScript site with no build step or package installation required. From the repository root, run:
+
+```sh
+python3 -m http.server 4173
+```
+
+Then open [http://localhost:4173](http://localhost:4173).
+
+## What’s included
+
+- Responsive single-page company site with sections for the company, service divisions, portfolio, approach and enquiries.
+- CGI visual identity using the navy, cream and gold palette described in the original website blueprint.
+- Custom generated imagery in `public/`.
+- Mobile navigation, scroll-reveal motion, service-to-enquiry selection and WhatsApp/email contact links.
+- The enquiry form opens the visitor’s email app with a pre-addressed, prefilled message. It does not store or send data to a backend.
+
+The detailed planning blueprint from the original README is preserved below.
+
+---
+
 # clinton-portfolio
 # **CLINTON GLOBAL INVESTMENT (CGI)**
 
