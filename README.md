@@ -4,19 +4,24 @@ A responsive corporate portfolio for CGI, a multi-service company based in Port 
 
 ## Run locally
 
-This is a static HTML, CSS and JavaScript site with no build step or package installation required. From the repository root, run:
+The site has no third-party dependencies. Build and serve the production-ready static output with Node.js and Python 3:
 
 ```sh
-python3 -m http.server 4173
+npm run build
+npm run preview
 ```
 
-Then open [http://localhost:4173](http://localhost:4173).
+Then open [http://localhost:4173](http://localhost:4173). The build copies the pages and images into `dist/`, matching Vercel’s configured output directory.
+
+## Deploy to Vercel
+
+Import this repository into Vercel. `vercel.json` configures the project as a static site and runs `npm run build`, publishing `dist/` as the output directory. No framework preset or environment variables are needed.
 
 ## What’s included
 
 - Responsive single-page company site with sections for the company, service divisions, portfolio, approach and enquiries.
 - CGI visual identity using the navy, cream and gold palette described in the original website blueprint.
-- Custom generated imagery in `public/`.
+- Custom generated imagery in `public/`, copied to the static site root at build time.
 - Mobile navigation, scroll-reveal motion, service-to-enquiry selection and WhatsApp/email contact links.
 - The enquiry form opens the visitor’s email app with a pre-addressed, prefilled message. It does not store or send data to a backend.
 
